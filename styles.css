@@ -58,7 +58,7 @@ h1 {
   margin: 10px;
 }
 
-.time-btn {
+.time-btn, .home-btn {
   background-color: transparent;
   border: 2px solid #C0C0C0;
   color: #fff;
@@ -68,9 +68,17 @@ h1 {
   font-size: 1.5rem;
 }
 
-.time-btn:hover {
+.score-element{
+  font-size: 3rem;
+}
+
+.time-btn:hover, .home-btn:hover {
   border: 2px solid #16D9E3;
   color: #16D9E3;
+}
+
+.timer, .score-element, .home-btn{
+  transition: 850ms ease;
 }
 
 .hide {
@@ -83,6 +91,7 @@ h1 {
 
 .board {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
